@@ -1,0 +1,112 @@
+body{
+   margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    overflow: none;
+    background-image: url("img1.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+i{
+        
+    color:white;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+    margin-left: 75px;
+}
+
+form{
+    
+    width:350px;
+    margin:0 auto;
+    margin-top:100px;
+    padding:10px;
+    padding-right: 15px;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 1) ;
+}
+label{
+    color:white;
+    font-size: 20px;
+}
+input[type=submit]{
+    width: 350px;
+    margin-left:auto;
+}
+input{
+    
+    width: 100%;
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+        
+}
+
+button{
+    background-color: transparent;
+    color:white;
+    padding:10px;
+    font-weight: bold;
+}
+
+
+
+.modal{
+ display: none;
+    z-index: 1;
+    width:350px;
+    margin:0 auto;
+    margin-top:100px;
+    padding:10px;
+    padding-right: 15px;
+    background-color: rgba(0,0,0,0.7);
+    transition: 2s;
+    
+}
+
+#regdiv{
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 1) ;
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    color:white;
+}
+
+p{
+    margin-top: -2px;
+    font-size: 18px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width:512px){
+    form{
+        width:240px;
+        margin-top:50px;
+    }
+    #regdiv{
+        width: 240px !important;
+    }
+    i{
+        margin-left: 35px;
+    }
+    .modal{
+        width: 240px;
+    }
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>SignUp Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+   
+<div id="myModal" class="modal" >
+
+    
+    <span class="close" onclick="modalclose()">&times;</span>
+    <br><br>
+  <div class="modal-content">
+   <br>
+    <label for="text">Username</label><br>
+    <input type="text"><br>
+    <label for="text">Password</label><br>
+    <input type="password">
+  </div>
+  <hr>
+  
+  <button>Sign In</button>
+
+</div>
+    
+
+        <form id="sign_up">
+                <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.gmail.com" target="_blank">
+                <i class="fa fa-envelope"></i>
+                </a>
+                <hr>
+                <label for="Firstname">First Name</label>
+                
+                <input type="text"><br>
+                <label for="Lastname">Last Name</label><br>
+                <input type="text"><br>
+                <label for="UserId">User Id</label><br>
+                <input type="text"><br>
+                <label for="email">Email</label><br>
+                <input type="email"><br>
+                <label for="pass">Password</label><br>
+                <input type="password">
+                <hr style="margin-top: 15px;">
+
+                   
+           
+             <button>Register</button>
+            <br>
+
+        </form>
+
+        <div style="width:350px; margin:auto; cursor: pointer;" onclick="modalopen()" id="regdiv"><p>Already Registered</p></div>
+        
+    
+    <script>
+        
+        function modalopen(){
+            document.getElementById("myModal").style.display="block";
+           document.getElementById("sign_up").style.display="none";
+           
+            document.getElementById("regdiv").style.display="none";
+        }
+       function modalclose(){
+           document.getElementById("myModal").style.display="none";
+           document.getElementById("sign_up").style.display="block";
+           
+           document.getElementById("regdiv").style.display="block";
+       }
+        
+        
+    </script>
+</body>
+</html>
